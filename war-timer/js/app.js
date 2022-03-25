@@ -4,7 +4,7 @@ const body = document.querySelector('body');
 let imgNum = Math.floor(Math.random() * 13 + 1);
 
 window.addEventListener('load', () => {
-    body.style.backgroundImage = `url(../assets/img/webp/${imgNum}.webp)`;
+    body.style.backgroundImage = `url(./assets/img/webp/${imgNum}.webp)`;
 })
 
 // Set timer
@@ -43,7 +43,7 @@ function prevBg() {
     } else {
         imgNum = 14;
     }
-    body.style.backgroundImage = `url(../assets/img/webp/${imgNum}.webp)`;
+    body.style.backgroundImage = `url(./assets/img/webp/${imgNum}.webp)`;
 }
 
 function nextBg() {
@@ -52,7 +52,7 @@ function nextBg() {
     } else {
         imgNum = 1;
     }
-    body.style.backgroundImage = `url(../assets/img/webp/${imgNum}.webp)`;
+    body.style.backgroundImage = `url(./assets/img/webp/${imgNum}.webp)`;
 }
 
 prev.addEventListener('click', prevBg);
